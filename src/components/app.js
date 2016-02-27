@@ -1,5 +1,6 @@
 import React from 'react';
 import AppHeader from './app-header'
+import TodoList from './todo-list'
 
 export default React.createClass({
   getInitialState: function () {
@@ -10,7 +11,7 @@ export default React.createClass({
           done: false
         }, {
           task: "Eat lunch",
-          done: false
+          done: true
         }
       ]
     };
@@ -22,7 +23,9 @@ export default React.createClass({
           title="First ever react TODO app."
           tagline="We're reinventing todos again"
         />
-        <div>Number of todos: {this.state.todos.length}</div>
+        <TodoList
+          todos={this.state.todos}
+        />
       </div>
     );
   }
