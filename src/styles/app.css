@@ -16,5 +16,6 @@
 }
 
 .todo-item.done {
+  color: #BBB;
   text-decoration: line-through;
 }
