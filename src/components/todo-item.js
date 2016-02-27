@@ -1,11 +1,18 @@
 import React from 'react';
+import classNames from 'classnames'
 
 export default React.createClass({
   render: function () {
+
+    var className = classNames({
+      'todo-item' : true,
+      'done' : this.props.todo.done
+    });
+
     return (
-      <div>
+      <div className={className}>
         <div>
-          >I> {this.props.position + 1}
+          >I> {this.props.position}
         </div>
         <div>
           >D> {this.props.todo.done ? 'Done' : 'Todo'}
@@ -13,6 +20,7 @@ export default React.createClass({
         <div>
           >T> {this.props.todo.task}
         </div>
+        <br/>
       </div>
     );
   }

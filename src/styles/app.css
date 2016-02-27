@@ -1,6 +1,8 @@
 /* Base Application Styles */
 
 .app {
+  font-family: monospace;
+  font-size: 20px;
   color: #666;
   max-width: 500px;
   margin: 0 auto;
@@ -9,8 +11,8 @@
 .todo-item {
   padding: 0.4em 0;
   cursor: pointer;
-  color: #333;
-  font-size: 20px;
+  color: #222;
+  font-size: 18px;
 }
 
 .todo-item.done {
