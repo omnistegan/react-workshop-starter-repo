@@ -5,12 +5,14 @@ export default React.createClass({
     return (
       <div>
         <div>
-        Task: {this.props.todo.task}
+          >I> {this.props.position + 1}
         </div>
         <div>
-        Done: {this.props.todo.done ? 'Done' : 'Still Todo'}
+          >D> {this.props.todo.done ? 'Done' : 'Todo'}
         </div>
-        <br/>
+        <div>
+          >T> {this.props.todo.task}
+        </div>
       </div>
     );
   }

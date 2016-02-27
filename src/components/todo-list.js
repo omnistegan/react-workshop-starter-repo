@@ -5,9 +5,12 @@ import TodoItem from './todo-item'
 export default React.createClass({
 
   render: function () {
-    var todoList = this.props.todos.map((todo) => {
+    var todoList = this.props.todos.map((todo, index) => {
       return (
-        <TodoItem todo={todo}/>
+        <div>
+          <TodoItem todo={todo} position={index}/>
+          <br/>
+        </div>
       );
     });
     return (

@@ -20,8 +20,8 @@ export default React.createClass({
     return (
       <div>
         <AppHeader
-          title="First ever react TODO app."
-          tagline="We're reinventing todos again"
+          title="T/D/A"
+          tagline=">> reinventing todos <<"
         />
         <TodoList
           todos={this.state.todos}
