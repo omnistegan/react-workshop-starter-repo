@@ -1,5 +1,9 @@
 /* Base Application Styles */
 
+html {
+  background-color: #DDD;
+}
+
 .app {
   font-family: monospace;
   font-size: 20px;
@@ -18,4 +22,8 @@
 .todo-item.done {
   color: #BBB;
   text-decoration: line-through;
+}
+
+.toggle-button {
+  cursor: pointer;
 }

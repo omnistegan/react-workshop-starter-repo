@@ -5,17 +5,19 @@ export default React.createClass({
 
   render: function () {
     var todoList = this.props.todos.map((todo, index) => {
-      var onClick = () => {
-        this.props.onTodoClick(index);
+      if (!todo.done || (todo.done && this.props.displayComplete)) {
+        var onClick = () => {
+          this.props.onTodoClick(index);
+        }
+        return (
+          <TodoItem
+            todo={todo}
+            position={index + 1}
+            onClick={onClick}
+            key={"todo"+index}
+          />
+        );
       }
-      return (
-        <TodoItem
-          todo={todo}
-          position={index + 1}
-          onClick={onClick}
-          key={"todo"+index}
-        />
-      );
     });
     return (
       <div>

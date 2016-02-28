@@ -12,13 +12,13 @@ export default React.createClass({
     return (
       <div className={className} onClick={this.props.onClick}>
         <div>
-          >I> {this.props.position}
+          &gt;I&lt; {this.props.position}
         </div>
         <div>
-          >D> {this.props.todo.done ? 'Done' : 'Todo'}
+          &gt;D&lt; {this.props.todo.done ? 'Done' : 'Todo'}
         </div>
         <div>
-          >T> {this.props.todo.task}
+          &gt;T&lt; {this.props.todo.task}
         </div>
         <br/>
       </div>
